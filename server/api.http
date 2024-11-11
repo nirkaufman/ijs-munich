@@ -1,6 +1,6 @@
-POST http://localhost:3000/chat
+POST http://localhost:3000/search
 Content-Type: application/json
 
 {
-    "prompt": "Hello, who are yoy?"
+    "prompt": "find me a backend developer"
 }

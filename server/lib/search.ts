@@ -25,3 +25,8 @@ const createStore = async () => {
   )
 }
 
+export const search = async (query: string, count: number = 2) => {
+  const store = await createStore();
+  return store.similaritySearch(query, count);
+}
+
