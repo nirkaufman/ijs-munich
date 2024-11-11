@@ -19,3 +19,7 @@ npx giget@latest nitro ijs-munich --install
 docker pull chromadb/chroma
 docker run -p 8000:8000 chromadb/chroma
 ```
+
+
+### Langchain loaders
+- https://js.langchain.com/docs/integrations/document_loaders/web_loaders/

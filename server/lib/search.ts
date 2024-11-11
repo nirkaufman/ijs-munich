@@ -12,7 +12,7 @@ const candidates = [
 ];
 
 const createStore = async () => {
-  const candidates = await prisma.candidate.findMany();
+  // const candidates = await prisma.candidate.findMany();
 
   return MemoryVectorStore.fromDocuments(
       candidates.map(
