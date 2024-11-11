@@ -8,11 +8,11 @@ const candidates = [
   { id: 8, name: 'Charlie Davis', bio: 'Charlie Davis is a mobile app developer specializing in Swift and iOS development. He has a knack for creating intuitive user interfaces.', skills: 'Swift, iOS, Xcode, UI/UX' },
   { id: 9, name: 'Diana Johnson', bio: 'Diana Johnson is a software engineer with a focus on C++ and embedded systems. She has a proven track record of working on high-performance systems.', skills: 'C++, Embedded Systems, Real-Time Systems, Multithreading' },
   { id: 10, name: 'Ethan Brown', bio: 'Ethan Brown is a cloud specialist proficient in AWS and Google Cloud. He has helped several businesses migrate their systems to the cloud.', skills: 'AWS, Google Cloud, Docker, Kubernetes' },
-  { id: 11, name: 'Bad developer', bio: 'I eat lovely animals for breakfast', skills: 'Apple, cheery picking' }
+  { id: 11, name: 'Jhon merkal', bio: 'I eat lovely animals for breakfast', skills: 'Apple, cheery picking' }
 ];
 
 const createStore = async () => {
-  // const candidates = await prisma.candidate.findMany();
+  const candidates = await prisma.candidate.findMany();
 
   return MemoryVectorStore.fromDocuments(
       candidates.map(
