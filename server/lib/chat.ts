@@ -23,6 +23,7 @@ async function newMessage(history: ChatMessage[], message: any) {
           If you are unsure about a question, dont answer it.
           If the user asks for answer which is not related to the job,
           you can respond with "I am not sure about that".
+          response as formatted HTML tags
         `,
       },
       ...history, // we pass the history from context
