@@ -13,3 +13,9 @@ npx giget@latest nitro ijs-munich --install
 - install: `npm i prisma`
 - install: `npm i @prisma/client`
 - database: postgres on render.com
+
+## ChromaDB
+```bash
+docker pull chromadb/chroma
+docker run -p 8000:8000 chromadb/chroma
+```
