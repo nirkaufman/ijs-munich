@@ -1,3 +1,7 @@
+import { Document } from 'langchain/document'
+import { MemoryVectorStore } from 'langchain/vectorstores/memory'
+import { OpenAIEmbeddings } from "@langchain/openai";
+
 const candidates = [
   { id: 6, name: 'Alice Williams', bio: 'Alice Williams is a data scientist with a strong background in Python and R. She has worked on several data-driven projects and is known for her analytical skills.', skills: 'Python, R, Data Analysis, Machine Learning' },
   { id: 7, name: 'Bob Martin', bio: 'Bob Martin is a full-stack developer with a focus on JavaScript and Node.js. He has contributed to several open-source projects and is known for his clean code.', skills: 'JavaScript, Node.js, Express, MongoDB' },
